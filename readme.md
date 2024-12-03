@@ -7,3 +7,9 @@
 ## Tech
 - HTML
 - CSS
+
+# Quiz App
+## Tech
+- HTML
+- Tailwind CSS
+- Javascript
