@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Clone</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <!-- Header -->
+    <header class="flex items-center justify-between bg-gray-800 p-4 shadow">
+      <!-- Left: Logo -->
+      <div class="flex items-center space-x-4">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg"
+          alt="YouTube Logo"
+          class="w-24"
+        />
+      </div>
+
+      <!-- Center: Search Bar -->
+      <div class="flex-grow max-w-xl mx-auto">
+        <div class="flex items-center">
+          <input
+            type="text"
+            placeholder="Search"
+            class="flex-grow bg-gray-700 text-white px-4 py-2 rounded-l-lg focus:outline-none"
+          />
+          <button class="bg-gray-700 px-4 py-2 rounded-r-lg hover:bg-gray-600">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Right: Icons -->
+      <div class="flex items-center space-x-4">
+        <button class="p-2 hover:bg-gray-700 rounded-full">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 17h5l-1.405-1.405A2.032 2.032 0 0 1 18 14.118V11a6.002 6.002 0 0 0-4-5.659V5a2 2 0 1 0-4 0v.341A6.002 6.002 0 0 0 6 11v3.118c0 .41-.162.806-.405 1.077L4 17h5m6 0v1a3 3 0 0 1-6 0v-1m6 0H9"
+            />
+          </svg>
+        </button>
+        <div class="w-8 h-8 bg-gray-500 rounded-full"></div>
+      </div>
+    </header>
+
+    <!-- Sidebar and Content -->
+    <div class="flex">
+      <!-- Sidebar -->
+      <!-- Sidebar -->
+      <aside class="w-16 md:w-64 bg-gray-800 h-screen p-4 flex flex-col space-y-4">
+        <!-- Sidebar Icons -->
+        <a href="#" class="flex flex-col items-center space-y-1 hover:bg-gray-700 p-2 rounded-lg">
+          <span>🏠</span>
+          <span class="hidden md:block text-xs">Home</span>
+        </a>
+        <a href="#" class="flex flex-col items-center space-y-1 hover:bg-gray-700 p-2 rounded-lg">
+          <span>🎥</span>
+          <span class="hidden md:block text-xs">Shorts</span>
+        </a>
+        <a href="#" class="flex flex-col items-center space-y-1 hover:bg-gray-700 p-2 rounded-lg">
+          <span>📺</span>
+          <span class="hidden md:block text-xs">Subscriptions</span>
+        </a>
+        <a href="#" class="flex flex-col items-center space-y-1 hover:bg-gray-700 p-2 rounded-lg">
+          <span>👤</span>
+          <span class="hidden md:block text-xs">You</span>
+        </a>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="flex-1 p-4">
+        <!-- Categories -->
+        <div class="flex space-x-4 overflow-x-auto scrollbar-hide pb-4">
+          <button class="bg-gray-700 text-sm px-4 py-2 rounded-lg hover:bg-gray-600">All</button>
+          <button class="bg-gray-700 text-sm px-4 py-2 rounded-lg hover:bg-gray-600">Music</button>
+          <button class="bg-gray-700 text-sm px-4 py-2 rounded-lg hover:bg-gray-600">Gaming</button>
+          <button class="bg-gray-700 text-sm px-4 py-2 rounded-lg hover:bg-gray-600">Movies</button>
+        </div>
+
+        <!-- Video Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- Video Card -->
+          <div class="bg-gray-800 rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/300x200" alt="Thumbnail" class="w-full" />
+            <div class="p-4">
+              <h3 class="text-sm font-semibold truncate">Sample Video Title</h3>
+              <p class="text-xs text-gray-400">Channel Name • 1M views • 3 days ago</p>
+            </div>
+          </div>
+          <div class="bg-gray-800 rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/300x200" alt="Thumbnail" class="w-full" />
+            <div class="p-4">
+              <h3 class="text-sm font-semibold truncate">Sample Video Title</h3>
+              <p class="text-xs text-gray-400">Channel Name • 1M views • 3 days ago</p>
+            </div>
+          </div>
+          <div class="bg-gray-800 rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/300x200" alt="Thumbnail" class="w-full" />
+            <div class="p-4">
+              <h3 class="text-sm font-semibold truncate">Sample Video Title</h3>
+              <p class="text-xs text-gray-400">Channel Name • 1M views • 3 days ago</p>
+            </div>
+          </div>
+          <div class="bg-gray-800 rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/300x200" alt="Thumbnail" class="w-full" />
+            <div class="p-4">
+              <h3 class="text-sm font-semibold truncate">Sample Video Title</h3>
+              <p class="text-xs text-gray-400">Channel Name • 1M views • 3 days ago</p>
+            </div>
+          </div>
+          <div class="bg-gray-800 rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/300x200" alt="Thumbnail" class="w-full" />
+            <div class="p-4">
+              <h3 class="text-sm font-semibold truncate">Sample Video Title</h3>
+              <p class="text-xs text-gray-400">Channel Name • 1M views • 3 days ago</p>
+            </div>
+          </div>
+          <div class="bg-gray-800 rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/300x200" alt="Thumbnail" class="w-full" />
+            <div class="p-4">
+              <h3 class="text-sm font-semibold truncate">Sample Video Title</h3>
+              <p class="text-xs text-gray-400">Channel Name • 1M views • 3 days ago</p>
+            </div>
+          </div>
+          <div class="bg-gray-800 rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/300x200" alt="Thumbnail" class="w-full" />
+            <div class="p-4">
+              <h3 class="text-sm font-semibold truncate">Sample Video Title</h3>
+              <p class="text-xs text-gray-400">Channel Name • 1M views • 3 days ago</p>
+            </div>
+          </div>
+          <div class="bg-gray-800 rounded-lg overflow-hidden">
+            <img src="https://via.placeholder.com/300x200" alt="Thumbnail" class="w-full" />
+            <div class="p-4">
+              <h3 class="text-sm font-semibold truncate">Sample Video Title</h3>
+              <p class="text-xs text-gray-400">Channel Name • 1M views • 3 days ago</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
